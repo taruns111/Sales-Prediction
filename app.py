@@ -6,7 +6,7 @@ model = joblib.load("demand_model.pkl")
 le_cat = joblib.load("category_encoder.pkl")
 le_sub = joblib.load("sub_category_encoder.pkl")
 
-df = pd.read_excel("sales_data.xls")
+df = pd.read_csv("sales_data.csv")
 
 st.title("📦 Product Demand Prediction App")
 st.write("Category → Sub-Category → Product based demand prediction")
